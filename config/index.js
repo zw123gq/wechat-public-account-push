@@ -6,12 +6,12 @@ export const config = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: "",
+  APP_ID: "wx2c1cff65156058ec",
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: "",
+  APP_SECRET: "wx2c1cff65156058ec",
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -51,7 +51,7 @@ export const config = {
 
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: "",
+  LITERARY_PREFERENCE: "其他",
   
 
   /**
@@ -60,17 +60,17 @@ export const config = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: "老婆0",
+      name: "赵赵",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "otTZn65LBPFqvEmvXa18tbdaa2fI",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "",
+      useTemplateId: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
       // 所在省份
-      province: "广东",
+      province: "河南",
       // 所在城市
-      city: "肇庆",
+      city: "郑州",
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '05-03',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -78,11 +78,11 @@ export const config = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
-        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+        {"type": "*生日", "name": "赵赵", "year": "1998", "date": "05-03"},
+        {"type": "*生日", "name": "宝宝", "year": "2001", "date": "10-23"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        {"type": "节日", "name": "恋爱", "year": "2021", "date": "02-16"},
+        {"type": "节日", "name": "相遇", "year": "2020", "date": "06-20"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
@@ -90,20 +90,25 @@ export const config = {
         {"keyword": "love_day", date: "2022-09-08"},
         // 结婚纪念日
         {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
+        // 亲亲日
         {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: "宝宝",
+      id: "otTZn6whTk9wxbU2xInPAx3AW2gc",
+      useTemplateId: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
+      province: "河南",
+      city: "安阳",
+      horoscopeDate: '10-23',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
+      festivals: [
+        {"type": "*生日", "name": "赵赵", "year": "1998", "date": "05-03"},
+        {"type": "*生日", "name": "宝宝", "year": "2001", "date": "10-23"},
+        {"type": "节日", "name": "恋爱", "year": "2021", "date": "02-16"},
+        {"type": "节日", "name": "相遇", "year": "2020", "date": "06-20"},
+      ],
       customizedDateList: []
     },
     {
@@ -139,7 +144,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "",
+  CALLBACK_TEMPLATE_ID: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -147,7 +152,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "otTZn6whTk9wxbU2xInPAx3AW2gc",
     },
     // 你可以不断按格式往下增加
     // ...
