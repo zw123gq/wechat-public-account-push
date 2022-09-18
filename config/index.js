@@ -64,7 +64,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "otTZn65LBPFqvEmvXa18tbdaa2fI",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
+      useTemplateId: "bcLyn5mvNr1-VWwiEufaArhEazPLwayLDlJU-1hxtnE",
       // 所在省份
       province: "河南",
       // 所在城市
@@ -87,7 +87,7 @@ export const config = {
       customizedDateList: [
         // 在一起的日子
         {"keyword": "love_day", date: "2021-02-16"},
-        // 恋爱纪念日
+        // 相遇纪念日
         {"keyword": "marry_day", date: "2020-06-20"},
         // 亲亲日
         {"keyword": "ex_day", date: "2022-09-10"},
@@ -96,7 +96,7 @@ export const config = {
     {
       name: "宝宝",
       id: "otTZn6whTk9wxbU2xInPAx3AW2gc",
-      useTemplateId: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
+      useTemplateId: "bcLyn5mvNr1-VWwiEufaArhEazPLwayLDlJU-1hxtnE",
       province: "河南",
       city: "安阳",
       horoscopeDate: '10-23',
@@ -145,7 +145,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "vPfiEhI1SWS4ULNswAoJVg-665-XXJUfxf9Rbb4rQ9E",
+  CALLBACK_TEMPLATE_ID: "",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
